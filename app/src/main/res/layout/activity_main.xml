@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="luoboman.www.luobo.com.myapplication.MainActivity">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:background="@color/hong"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/img"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_back"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:textColor="@color/baise"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+
+        android:layout_toRightOf="@id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="百度新歌榜"/>
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_below="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+    </com.youth.banner.Banner>
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/recycleview"
+        android:layout_below="@id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>
